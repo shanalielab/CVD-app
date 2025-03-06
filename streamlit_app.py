@@ -84,6 +84,6 @@ if st.button("Predict CVD Risk"):
     probability = model.predict_proba(input_data)[0][1]  # Probability of having CVD
 
     if prediction == 1:
-        st.error(f"🚨 High Risk of CVD! Probability: {probability:.2f}")
+        st.error(f"🚨 Based on the provided information, there may be a higher risk of developing cardiovascular disease. Consider consulting a healthcare professional for further evaluation! Probability: {probability:.2f}")
     else:
-        st.success(f"✅ Low Risk of CVD! Probability: {probability:.2f}")
+        st.success(f"✅ Based on the provided information, there are no strong indications og high cardiovascular risk. Maintaining a health lifestyle is still important! Probability: {probability:.2f}")
