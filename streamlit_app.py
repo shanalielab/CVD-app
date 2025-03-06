@@ -10,7 +10,7 @@ with open("cvd_model.pkl", "rb") as model_file:
 st.title("CVD Risk Prediction")
 
 # Numeric Inputs
-age = st.number_input("Age", min_value=20, max_value=100, step=1)
+age = st.number_input("Age", min_value=18, max_value=69, step=1)
 fasting_bg_mgdl = st.number_input("Fasting Blood Glucose (mg/dL)", min_value=50, max_value=300)
 heart_rate = st.number_input("Heart Rate (bpm)", min_value=40, max_value=150)
 cholesterol_mgdl = st.number_input("Cholesterol (mg/dL)", min_value=100, max_value=400)
